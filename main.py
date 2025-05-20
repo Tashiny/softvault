@@ -25,7 +25,7 @@ colorama.init()
 
 # Конфигурация вебхука
 WEBHOOK_PATH = "/webhook"
-WEBHOOK_URL = os.environ.get("https://softvaultbot.onrender.com/webhook") + WEBHOOK_PATH  # Пример: https://your-bot.onrender.com/webhook
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL") + WEBHOOK_PATH  # Пример: https://your-bot.onrender.com/webhook
 
 # Запуск шедулеров
 async def scheduler_start(bot: Bot, arSession: ARS):
